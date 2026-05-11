@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>暴叔讲留学｜以终为始，为中国家庭提供终身陪伴制规划服务</title>
+  <meta name="description" content="暴叔讲留学官网：不做中介，做家庭教育合伙人。从升学规划、留学申请、背景提升到职业发展，陪孩子走好每一步。" />
+  <style>
+    :root{
+      --red:#970016;
+      --red2:#6e000d;
+      --red3:#bd1128;
+      --black:#0f0f0f;
+      --dark:#1a1a1a;
+      --gray:#777;
+      --line:#e7dfdd;
+      --warm:#f7f3f1;
+      --cream:#fbfaf8;
+      --white:#fff;
+      --shadow:0 24px 60px rgba(42,0,0,.12);
+      --radius:24px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:#222;background:var(--cream);font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65;overflow-x:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(251,250,248,.92);border-bottom:1px solid rgba(0,0,0,.06);backdrop-filter:blur(18px)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:25px;letter-spacing:.03em;color:#111;white-space:nowrap}
+    .mark{width:42px;height:42px;background:var(--red);clip-path:polygon(0 0,78% 0,52% 30%,100% 30%,100% 100%,23% 100%,50% 68%,0 68%)}
+    .navlinks{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:800;color:#222}
+    .navlinks a{padding:27px 0;position:relative}
+    .navlinks a:hover,.navlinks a.active{color:var(--red)}
+    .navlinks a:hover:after,.navlinks a.active:after{content:"";position:absolute;left:0;right:0;bottom:16px;height:2px;background:var(--red)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 23px;border:1px solid transparent;font-weight:900;font-size:14px;line-height:1;cursor:pointer;transition:.25s ease;white-space:nowrap}
+    .btn-red{background:var(--red);color:#fff;box-shadow:0 15px 28px rgba(151,0,22,.22)}
+    .btn-red:hover{background:var(--red2);transform:translateY(-2px)}
+    .btn-white{background:#fff;color:var(--red);border-color:#fff}
+    .btn-ghost{color:#fff;border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.05)}
+    .btn-line{background:#fff;border-color:#dcc9c5;color:var(--red)}
+
+    .hero{position:relative;background:var(--red);overflow:hidden;color:#fff}
+    .hero:after{content:"UNCLE BAO";position:absolute;left:-4%;top:-11%;font-size:188px;font-weight:900;color:rgba(255,255,255,.045);letter-spacing:.02em;line-height:1;pointer-events:none}
+    .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:.92fr 1.08fr;align-items:center;gap:44px;min-height:690px;padding:66px 0 76px}
+    .hero-copy{max-width:610px}
+    .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:var(--red);margin-bottom:12px}
+    .hero .kicker{color:rgba(255,255,255,.72)}
+    h1,h2,h3{margin:0;line-height:1.16;color:#111}
+    h1{font-family:"STSong","Songti SC",serif;font-weight:900;font-size:72px;letter-spacing:.04em;color:#fff}
+    h2{font-family:"STSong","Songti SC",serif;font-size:45px;font-weight:900;letter-spacing:.02em}
+    h3{font-size:21px;font-weight:900}
+    .hero p{font-size:19px;color:rgba(255,255,255,.86);margin:26px 0 34px;max-width:520px}
+    .hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+    .hero-image{position:relative;border-radius:30px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.26);transform:rotate(-1deg);background:#111}
+    .hero-image img{width:100%;height:470px;object-fit:cover;object-position:center top;opacity:.96}
+    .hero-image:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(151,0,22,.28),transparent 55%);z-index:1;pointer-events:none}
+    .hero-badge{position:absolute;left:26px;bottom:26px;z-index:2;background:rgba(255,255,255,.92);color:#111;border-radius:18px;padding:18px 20px;backdrop-filter:blur(8px);box-shadow:0 16px 40px rgba(0,0,0,.18)}
+    .hero-badge strong{display:block;color:var(--red);font-size:28px;line-height:1}.hero-badge span{font-size:13px;color:#555;font-weight:800}
+
+    section{padding:88px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:40px}
+    .lead{font-size:17px;color:var(--gray);max-width:720px;margin:14px 0 0}
+    .redline{width:54px;height:3px;background:var(--red);margin:16px 0 0}
+    .grid{display:grid;gap:20px}
+    .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+    .card{background:#fff;border:1px solid rgba(75,0,0,.08);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px;position:relative;overflow:hidden}
+    .card h3{margin-bottom:10px}.card p{margin:0;color:#6e6e6e;font-size:15px}.card ul{padding:0;margin:16px 0 0;list-style:none}.card li{position:relative;padding-left:17px;margin:8px 0;color:#555;font-size:14px}.card li:before{content:"";position:absolute;left:0;top:.78em;width:6px;height:6px;border-radius:50%;background:var(--red)}
+    .icon{width:52px;height:52px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:#fff;font-weight:900;font-size:22px;margin-bottom:18px}
+    .soft{background:linear-gradient(180deg,#fff,#fbf8f7)}
+    .dark{background:#121212;color:#fff}.dark h2,.dark h3{color:#fff}.dark p,.dark .lead{color:rgba(255,255,255,.72)}
+    .image-card{padding:0;overflow:hidden}.image-card img{width:100%;height:100%;object-fit:cover}.image-caption{padding:22px;background:#fff}.image-caption h3{font-size:20px}.image-caption p{font-size:14px;color:#666}
+    .img-framed{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(80,0,0,.08);background:#fff}
+    .img-framed img{width:100%;object-fit:cover}
+
+    .intro{background:#fff}
+    .intro-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+    .quote{font-family:"STSong","Songti SC",serif;font-size:34px;line-height:1.35;font-weight:900;color:#111;margin:0 0 20px}.quote em{font-style:normal;color:var(--red)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
+    .stat{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;text-align:center}.stat strong{font-family:Georgia,serif;font-size:42px;color:var(--red);display:block;line-height:1}.stat span{font-size:13px;font-weight:800;color:#555}
+
+    .brand-sec{background:var(--warm)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+    .pill-list{display:grid;gap:14px;margin-top:25px}.pill{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px}.pill:before{content:"✓";flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+
+    .media-strip{background:#111;color:#fff;position:relative;overflow:hidden}.media-strip:before{content:"UNCLE BAO";position:absolute;top:0;right:-4%;font-size:150px;font-weight:900;color:rgba(255,255,255,.04)}
+    .media-strip h2{color:#fff}.media-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px}.media-grid .img-framed{background:#000;border-color:rgba(255,255,255,.1)}
+
+    .services{background:#fff}.service-card{min-height:255px}.service-card:after{content:"";position:absolute;right:-40px;bottom:-40px;width:140px;height:140px;border-radius:50%;background:rgba(151,0,22,.06)}
+
+    .projects{background:var(--warm)}
+    .criteria{background:var(--red);color:#fff;border-radius:34px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;box-shadow:var(--shadow);margin-bottom:42px}.criteria-text{padding:42px}.criteria h2,.criteria h3{color:#fff}.criteria p{color:rgba(255,255,255,.78)}.criteria img{height:100%;min-height:380px;object-fit:cover;filter:saturate(.9)}
+    .project-card{padding:0}.project-card .image{height:215px;overflow:hidden}.project-card .image img{width:100%;height:100%;object-fit:cover}.project-card .body{padding:28px}.tag{display:inline-flex;background:rgba(151,0,22,.09);color:var(--red);font-size:12px;font-weight:900;border-radius:999px;padding:6px 10px;margin-bottom:12px}
+
+    .resources{background:#fff}.resource-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.resource-gallery .img-framed img{height:260px;object-fit:cover}.resource-gallery .wide{grid-column:span 2}.resource-gallery .wide img{height:360px}
+
+    .team{background:#101010;color:#fff}.team h2{color:#fff}.team .card{background:#191919;border-color:rgba(255,255,255,.08);box-shadow:none}.team .card h3{color:#fff}.team .card p{color:rgba(255,255,255,.68)}
+
+    .reports{background:var(--warm)}.report-layout{display:grid;grid-template-columns:1fr 1fr;gap:22px}.report-layout .img-framed img{height:335px;object-fit:cover}
+    .cases{background:var(--red);color:#fff}.cases h2,.cases h3{color:#fff}.case-card{border:1px solid rgba(255,255,255,.25);border-radius:24px;padding:28px;background:rgba(255,255,255,.06)}.case-card p{color:rgba(255,255,255,.78);font-size:14px}
+    .offer-gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;margin-top:36px}.offer-gallery img{height:380px;object-fit:cover;width:100%}
+
+    .sim{background:#fff}.carousel{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.carousel .img-framed img{height:250px;object-fit:cover}
+    .faq{background:var(--warm)}.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.qa{display:flex;justify-content:space-between;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 22px;font-weight:900}.qa span{display:flex;align-items:center;gap:12px}.qa span:before{content:"Q";width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px}.qa b{color:var(--red)}
+    .cta{background:#fff}.cta-box{background:linear-gradient(110deg,var(--red),var(--red2));border-radius:34px;overflow:hidden;display:grid;grid-template-columns:1fr .65fr;align-items:center;box-shadow:var(--shadow)}.cta-copy{padding:50px;color:#fff}.cta-copy h2{color:#fff}.cta-copy p{color:rgba(255,255,255,.8);font-size:17px}.cta-box img{width:100%;height:100%;min-height:300px;object-fit:cover;opacity:.75;mix-blend-mode:screen;filter:saturate(.8)}
+    footer{background:#111;color:#fff;padding:42px 0;position:relative;overflow:hidden}footer:after{content:"";position:absolute;right:40px;bottom:-40px;width:360px;height:190px;opacity:.12;background:radial-gradient(circle,#fff 1px,transparent 1.6px);background-size:14px 14px}.foot{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:30px}.footnav{display:flex;gap:25px;flex-wrap:wrap;color:#ddd;font-size:14px}.small{color:#999;font-size:13px;margin-top:6px}
+    .mobile-menu{display:none}
+
+    @media(max-width:1080px){.navlinks{display:none}.mobile-menu{display:inline-flex}.hero .wrap,.intro-grid,.split,.criteria,.media-grid,.report-layout,.offer-gallery,.cta-box{grid-template-columns:1fr}.hero .wrap{min-height:auto}.hero-image img{height:auto}.g5,.g4,.g3,.resource-gallery,.carousel{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.resource-gallery .wide{grid-column:span 2}}
+    @media(max-width:680px){.wrap{width:min(100% - 28px,var(--max))}section{padding:62px 0}.nav{height:66px}.brand{font-size:21px}.mark{width:34px;height:34px}h1{font-size:44px}h2{font-size:32px}.hero p,.lead{font-size:15px}.hero .wrap{padding:46px 0 56px}.g5,.g4,.g3,.g2,.stats,.resource-gallery,.carousel,.faq-grid,.case-row{grid-template-columns:1fr}.resource-gallery .wide{grid-column:span 1}.resource-gallery .img-framed img,.resource-gallery .wide img,.report-layout .img-framed img,.carousel .img-framed img,.offer-gallery img{height:auto}.criteria-text,.cta-copy{padding:30px}.foot{display:block}.footnav{margin-top:25px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home"><span class="mark"></span><span>暴叔讲留学</span></a>
+      <nav class="navlinks">
+        <a class="active" href="#home">首页</a><a href="#about">关于暴叔</a><a href="#advantages">核心优势</a><a href="#services">服务体系</a><a href="#projects">热门项目</a><a href="#cases">成功案例</a><a href="#reports">规划报告</a><a href="#team">团队实力</a>
+      </nav>
+      <a class="btn btn-red" href="#contact">立即咨询</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <div class="kicker">Study Abroad Education 2026</div>
+          <h1>以终为始<br>陪中国家庭走好每一步</h1>
+          <p>不只帮孩子申请一所学校，更陪一个家庭完成从升学规划、能力成长、名校录取，到未来就业发展的长期布局。</p>
+          <div class="hero-ctas">
+            <a class="btn btn-white" href="#contact">预约升学规划</a>
+            <a class="btn btn-ghost" href="#about">了解暴叔团队</a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img src="assets/hero_manual.jpg" alt="暴叔讲留学品牌手册首屏视觉" />
+          <figcaption class="hero-badge"><strong>20,000+</strong><span>孩子的追梦人生被陪伴与见证</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="intro">
+      <div class="wrap intro-grid">
+        <div>
+          <div class="kicker">Brand Positioning</div>
+          <h2>不做中介，做家庭教育合伙人</h2>
+          <div class="redline"></div>
+          <p class="lead">暴叔讲留学相信，留学不是一次简单的申请服务，而是一场关于孩子未来十年、二十年的长期规划。我们希望站在家庭长期发展的角度，帮孩子找到全球范围内匹配度更高、成长更稳、未来更有潜力的人生进阶路径。</p>
+          <p class="quote">“将每个孩子当作自己的孩子来培养，给足够的关心、清晰的规划，还有真正走心踏实的陪伴。”</p>
+          <div class="stats">
+            <div class="stat"><strong>20,000+</strong><span>孩子成长被陪伴</span></div>
+            <div class="stat"><strong>10+</strong><span>年行业深耕</span></div>
+            <div class="stat"><strong>全球</strong><span>院校与资源链接</span></div>
+            <div class="stat"><strong>全程</strong><span>升学到就业陪伴</span></div>
+          </div>
+        </div>
+        <div class="img-framed"><img src="assets/letter_collage.jpg" alt="暴叔心里话与团队活动画面" /></div>
+      </div>
+    </section>
+
+    <section id="advantages" class="brand-sec">
+      <div class="wrap split">
+        <div class="img-framed"><img src="assets/brand_statement.jpg" alt="品牌理念页面：把每个孩子当作自己的孩子来培养" /></div>
+        <div>
+          <div class="kicker">Our Promise</div>
+          <h2>我们不是把孩子送出去，而是陪孩子真正走进去</h2>
+          <p class="lead">很多服务只负责把申请递出去。暴叔讲留学更关心的是：孩子能不能适应、能不能成长、能不能进入更好的圈层，能不能把学历变成未来真正的竞争力。</p>
+          <div class="pill-list">
+            <div class="pill"><div><strong>规划先于申请</strong><br>先看孩子适合什么，再决定申请什么。</div></div>
+            <div class="pill"><div><strong>陪伴重于成交</strong><br>关键节点有人解释，重要选择有人一起判断。</div></div>
+            <div class="pill"><div><strong>资源服务结果</strong><br>把全球资源转化为孩子真实可见的成长机会。</div></div>
+            <div class="pill"><div><strong>长期结果导向</strong><br>Offer 不是终点，未来选择权才是长期目标。</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-strip">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Influence</div><h2>暴叔讲留学，是谁？</h2><p class="lead">不是一个人，更是一个懂教育、能成事的顶级团队；不是单纯做申请，而是用专业内容、项目研发和深度陪伴建立家长信任。</p></div>
+        </div>
+        <div class="media-grid">
+          <div class="img-framed"><img src="assets/awards.jpg" alt="暴叔讲留学荣誉与奖项展示" /></div>
+          <div class="grid">
+            <div class="card dark"><h3>高影响力教育 IP</h3><p>通过持续内容输出，把复杂的国际教育问题讲给家长听懂。</p></div>
+            <div class="card dark"><h3>官方活动与行业现场</h3><p>长期参与国内外教育活动、院校交流与资源对接。</p></div>
+            <div class="card dark"><h3>从科普到交付</h3><p>不仅讲清楚，更把规划、项目与服务真正落地。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Global Resources</div><h2>链接全球顶级资源，帮孩子看见更大的世界</h2><p class="lead">我们持续走进全球高校、教育机构和行业资源现场，理解真实的升学环境、院校特点和人才需求。</p></div>
+        </div>
+        <div class="resource-gallery">
+          <div class="img-framed wide"><img src="assets/campus_visits.jpg" alt="全球高校访校画面" /></div>
+          <div class="img-framed"><img src="assets/education_events.jpg" alt="教育活动现场画面" /></div>
+          <div class="img-framed"><img src="assets/global_resource_dark.jpg" alt="全球资源与就业资源表达" /></div>
+          <div class="img-framed wide"><img src="assets/resource_cards.jpg" alt="高校与企业资源合作内容展示" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Service System</div><h2>从升学到就业，给孩子一套完整成长方案</h2><p class="lead">不同孩子的问题，不可能靠单一服务解决。我们用规划、申请、提升、就业和陪伴，组成一套能长期执行的成长系统。</p></div>
+        </div>
+        <div class="grid g5">
+          <div class="card service-card"><div class="icon">规</div><h3>升学规划服务</h3><p>根据年级、成绩、语言、预算和未来目标，制定国家、院校、专业与时间规划。</p></div>
+          <div class="card service-card"><div class="icon">申</div><h3>留学申请服务</h3><p>覆盖选校、文书、材料、网申、面试、录取分析与入学前准备。</p></div>
+          <div class="card service-card"><div class="icon">升</div><h3>背景提升服务</h3><p>通过科研、实习、竞赛、活动和作品集，让普通经历变成申请竞争力。</p></div>
+          <div class="card service-card"><div class="icon">低</div><h3>低龄升学规划</h3><p>帮助初高中家庭提前判断国际化、低龄留学和海外衔接路径。</p></div>
+          <div class="card service-card"><div class="icon">职</div><h3>职业就业规划</h3><p>从专业选择、行业认知、岗位能力到求职策略，提前建立长期发展方向。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="wrap">
+        <div class="criteria">
+          <div class="criteria-text">
+            <div class="kicker" style="color:rgba(255,255,255,.7)">Project Selection</div>
+            <h2>严选项目，不做无效推荐</h2>
+            <p>每一个推荐给家庭的项目，都必须经得起追问：为什么适合这个孩子？路径是否清楚？成本是否合理？未来是否有发展空间？是否有足够案例和服务能力支撑？</p>
+            <div class="grid g2" style="margin-top:26px">
+              <div><h3>官方背书</h3><p>权威可靠，路径来源清晰。</p></div>
+              <div><h3>性价比高</h3><p>成本可控，成长收益明确。</p></div>
+              <div><h3>路径清晰</h3><p>升学逻辑完整，阶段目标明确。</p></div>
+              <div><h3>案例扎实</h3><p>有真实反馈和服务验证。</p></div>
+            </div>
+          </div>
+          <img src="assets/project_criteria.jpg" alt="项目严选标准页面" />
+        </div>
+
+        <div class="section-head">
+          <div><div class="kicker">Featured Projects</div><h2>热门项目</h2></div>
+        </div>
+        <div class="grid g3">
+          <article class="card project-card">
+            <div class="image"><img src="assets/um_pre.jpg" alt="马来亚大学官方预科项目页面" /></div>
+            <div class="body"><span class="tag">马来亚大学官方预科</span><h3>通往马来西亚顶尖公立大学的清晰路径</h3><p>适合希望以更友好门槛、更高性价比进入国际化本科体系的学生家庭。</p></div>
+          </article>
+          <article class="card project-card">
+            <div class="image"><img src="assets/sim_intro.jpg" alt="SIM中新班项目页面" /></div>
+            <div class="body"><span class="tag">SIM中新班</span><h3>不出国门，提前完成国际能力搭建</h3><p>强化英语、海外技能、PBL项目与综合素养，提前适应国际化学习方式。</p></div>
+          </article>
+          <article class="card project-card">
+            <div class="image"><img src="assets/resource_cards.jpg" alt="资源合作项目展示" /></div>
+            <div class="body"><span class="tag">科研与就业资源</span><h3>让孩子不只是有学历，更有竞争力</h3><p>链接科研、实习、技能培训与就业资源，把升学成果转化为长期竞争力。</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sim">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Project Scenes</div><h2>项目现场与家长反馈</h2><p class="lead">官网配图均来自品牌手册素材，保留真实项目现场、反馈截图、活动图与课程图的质感。</p></div></div>
+        <div class="carousel">
+          <div class="img-framed"><img src="assets/um_scenes.jpg" alt="马来亚大学官方预科现场" /></div>
+          <div class="img-framed"><img src="assets/sim_feedback.jpg" alt="SIM中新班家长反馈" /></div>
+          <div class="img-framed"><img src="assets/sim_open_day.jpg" alt="SIM中新班开放日" /></div>
+          <div class="img-framed"><img src="assets/sim_course.jpg" alt="课程体系与课堂现场" /></div>
+          <div class="img-framed"><img src="assets/sim_speech.jpg" alt="演讲课与表达训练" /></div>
+          <div class="img-framed"><img src="assets/internal_events.jpg" alt="内部专属活动" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <div class="wrap split">
+        <div>
+          <div class="kicker">Team</div>
+          <h2>不是一个人，而是一支懂教育、能成事的团队</h2>
+          <p class="lead">暴叔讲留学背后，是覆盖产品研发、低龄规划、升学顾问、求职顾问、文书团队、外教资源与服务交付的综合型团队。规划师负责方向，申请团队负责执行，文书团队负责表达，职业团队负责未来。</p>
+          <div class="grid g2" style="margin-top:28px">
+            <div class="card dark"><h3>规划师团队</h3><p>负责升学路径、阶段目标与长期成长规划。</p></div>
+            <div class="card dark"><h3>申请文书团队</h3><p>负责材料、文书、申请策略与表达打磨。</p></div>
+            <div class="card dark"><h3>职业规划团队</h3><p>负责行业认知、求职路径和长期发展方向。</p></div>
+            <div class="card dark"><h3>产品研发团队</h3><p>负责项目调研、资源整合与服务升级。</p></div>
+          </div>
+        </div>
+        <div class="img-framed"><img src="assets/team_intro.jpg" alt="暴叔讲留学团队介绍" /></div>
+      </div>
+    </section>
+
+    <section id="reports" class="reports">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Planning Reports</div><h2>不是一句建议，而是一份能执行的规划报告</h2><p class="lead">真正有效的升学规划，不应该只是“你可以申请这些学校”。我们会根据学生真实情况与学术诉求，输出覆盖时间阶段、能力提升、选校策略和执行重点的专业报告。</p></div></div>
+        <div class="report-layout">
+          <div class="img-framed"><img src="assets/report_hsb.jpg" alt="高升本申请规划报告展示" /></div>
+          <div class="img-framed"><img src="assets/report_ms_us.jpg" alt="硕士申请与美本陪跑规划报告展示" /></div>
+          <div class="img-framed"><img src="assets/report_career.jpg" alt="职业规划报告展示" /></div>
+          <div class="card">
+            <div class="icon">报</div>
+            <h3>报告类型示例</h3>
+            <ul>
+              <li>高升本申请规划报告</li>
+              <li>硕士申请规划报告</li>
+              <li>美本陪跑规划报告</li>
+              <li>职业规划报告</li>
+              <li>升学与就业双路径规划报告</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="cases">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker" style="color:rgba(255,255,255,.72)">Success Stories</div><h2>我们见证过很多孩子的逆袭时刻</h2><p class="lead">这些结果背后，不只是申请技巧，更是长期规划、专业判断、情绪陪伴、资源匹配和团队协作共同作用的结果。</p></div></div>
+        <div class="grid g4">
+          <div class="case-card"><h3>普通背景 → 香港名校 Offer</h3><p>通过背景梳理、申请策略调整和文书打磨，提升申请竞争力。</p></div>
+          <div class="case-card"><h3>升学受挫 → 海外名校录取</h3><p>重新定位路径，调整申请策略，帮助孩子完成逆转。</p></div>
+          <div class="case-card"><h3>专业迷茫 → 职业方向清晰</h3><p>通过职业规划和升学路径设计，逐步建立清晰目标。</p></div>
+          <div class="case-card"><h3>国际能力搭建 → 名校衔接</h3><p>提前适应国际课程与海外学习方式，为后续升学打基础。</p></div>
+        </div>
+        <div class="offer-gallery">
+          <div class="img-framed"><img src="assets/offer_wall.jpg" alt="Offer墙展示" /></div>
+          <div class="img-framed"><img src="assets/offer_story_1.jpg" alt="Offer案例与学生反馈" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">FAQ</div><h2>常见问题</h2></div></div>
+        <div class="faq-grid">
+          <div class="qa"><span>暴叔讲留学和传统留学中介有什么不同？</span><b>+</b></div>
+          <div class="qa"><span>孩子成绩普通，也适合咨询吗？</span><b>+</b></div>
+          <div class="qa"><span>你们只做留学申请吗？</span><b>+</b></div>
+          <div class="qa"><span>什么时候开始规划比较好？</span><b>+</b></div>
+          <div class="qa"><span>你们会推荐所有项目吗？</span><b>+</b></div>
+          <div class="qa"><span>方向不确定，可以先咨询吗？</span><b>+</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <div class="wrap">
+        <div class="cta-box">
+          <div class="cta-copy">
+            <div class="kicker" style="color:rgba(255,255,255,.72)">Start Now</div>
+            <h2>孩子的未来，不该靠猜</h2>
+            <p>从升学规划到未来就业，让暴叔讲留学陪你一起，把孩子的成长路径看清楚、走扎实。</p>
+            <div class="hero-ctas" style="margin-top:26px"><a class="btn btn-white" href="#home">立即预约规划咨询</a><a class="btn btn-ghost" href="#services">查看服务体系</a></div>
+          </div>
+          <img src="assets/final_cta_no_qr.jpg" alt="暴叔讲留学最终咨询页视觉裁切" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div><div class="brand" style="color:#fff"><span class="mark"></span><span>暴叔讲留学</span></div><div class="small">以终为始，为中国家庭提供终身陪伴制规划服务</div></div>
+      <nav class="footnav"><a href="#home">首页</a><a href="#about">关于暴叔</a><a href="#advantages">核心优势</a><a href="#services">服务体系</a><a href="#projects">热门项目</a><a href="#cases">成功案例</a><a href="#reports">规划报告</a><a href="#team">团队实力</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
